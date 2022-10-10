@@ -1,0 +1,14 @@
+{
+    "name": "emily/festa",
+    "authors": [
+        {
+            "name": "pedrorhoden"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "":"src/"
+        }
+    }
+}

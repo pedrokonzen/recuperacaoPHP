@@ -1,0 +1,14 @@
+{
+    "name": "emily/atividades",
+    "authors": [
+        {
+            "name": "pedrorhoden"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "":"src/"
+        }
+    }
+}
