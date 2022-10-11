@@ -1,7 +1,6 @@
 <?php
 class Atividade implements ActiveRecord
 {
-
     private float $id;
     // construtor
     public function __construct(
