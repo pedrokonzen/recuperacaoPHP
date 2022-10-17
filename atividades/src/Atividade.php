@@ -1,5 +1,7 @@
+// okokokokokokkokokoko
+
 <?php
-class Atividade implements ActiveRecord
+class Atividade implements ActiveRecord 
 {
     private float $id;
     // construtor
