@@ -1,5 +1,3 @@
-// okokokokokokkokokoko
-
 <?php
 class Atividade implements ActiveRecord 
 {
