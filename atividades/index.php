@@ -28,7 +28,7 @@ $atividades = Atividade::findall();
         echo "<tr>";
         echo "<td>{$atividade->getDescricao()}</td>";
         echo "<td>{$atividade->getData()}</td>";
-        echo "<td>" . (($atividade->getStatus() == 0) ? 'Realizada' : 'Pendente') . "</td>";
+        echo "<td>" . (($atividade->getStatus() == 1) ? 'Realizada' : 'Pendente') . "</td>";
 
 
         echo "<td>

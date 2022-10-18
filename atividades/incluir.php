@@ -4,7 +4,7 @@ if (isset($_POST['botao'])){
     $atividade = new Atividade
     ($_POST['descricao'],
     $_POST['data'],
-    ($_POST['status'] == "on") ? 0 : 1);
+    ($_POST['status'] == "on") ? 1 : 0);
     $atividade->save();
     header("location: index.php");
 }

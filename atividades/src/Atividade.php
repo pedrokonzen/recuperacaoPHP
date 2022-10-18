@@ -1,6 +1,7 @@
 <?php
-class Atividade implements ActiveRecord 
+class Atividade implements ActiveRecord
 {
+
     private float $id;
     // construtor
     public function __construct(
@@ -102,7 +103,7 @@ class Atividade implements ActiveRecord
     }
     public static function findallREALIZADAS():array{
         $conexao = new MySQL();
-        $sql = "SELECT * FROM atividades WHERE status = 0 ORDER BY data ASC";
+        $sql = "SELECT * FROM atividades WHERE status = 1 ORDER BY data ASC";
         $resultados = $conexao->consulta($sql);
         $atividades = array();
         foreach($resultados as $resultado) {
@@ -117,7 +118,7 @@ class Atividade implements ActiveRecord
     }
     public static function findallPENDENTES():array{
         $conexao = new MySQL();
-        $sql = "SELECT * FROM atividades WHERE status = 1 ORDER BY data ASC";
+        $sql = "SELECT * FROM atividades WHERE status = 0 ORDER BY data ASC";
         $resultados = $conexao->consulta($sql);
         $atividades = array();
         foreach($resultados as $resultado) {

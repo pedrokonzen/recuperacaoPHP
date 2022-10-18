@@ -8,7 +8,7 @@ if(isset($_POST['botao'])){
     $atividade = new Atividade
     ($_POST['descricao'],
     $_POST['data'],
-    $_POST['status'] = ( isset($_POST['status']) ) ? false : 0);
+    $_POST['status'] = ( isset($_POST['status']) ) ? true : 0);
     $atividade->setId($_POST['id']);
     $atividade->save();
     header("location: index.php");
