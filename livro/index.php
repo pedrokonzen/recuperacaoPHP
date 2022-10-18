@@ -28,7 +28,7 @@ $livros = Livro::findall();
         echo "<tr>";
         echo "<td>{$livro->getTitulo()}</td>";
         echo "<td>{$livro->getAutoras()}</td>";
-        echo "<td>".(($livro->getStatus() == 0)? 'Lido' : 'Não Lido')."</td>";
+        echo "<td>".(($livro->getStatus() == 1)? 'Lido' : 'Não Lido')."</td>";
 
 
         echo "<td>

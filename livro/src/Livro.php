@@ -98,7 +98,7 @@ class Livro implements ActiveRecord{
 
     public static function findAllnaoLidos():array{
         $conexao = new MySQL();
-        $sql = "SELECT * from livros where status = 1";
+        $sql = "SELECT * from livros where status = 0";
         $resultados = $conexao->consulta($sql);        
         $livros = array();
         foreach($resultados as $resultado){
@@ -114,7 +114,7 @@ class Livro implements ActiveRecord{
 
     public static function findAllLidos():array{
         $conexao = new MySQL();
-        $sql = "SELECT * from livros where status = 0";
+        $sql = "SELECT * from livros where status = 1";
         $resultados = $conexao->consulta($sql);        
         $livros = array();
         foreach($resultados as $resultado){

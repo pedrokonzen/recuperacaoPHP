@@ -8,7 +8,7 @@ if(isset($_POST['botao'])){
     $livro = new Livro
     ($_POST['titulo'],
     $_POST['autoras'],
-    ($_POST['status'] == "Lido") ? 1 : 0);
+    ($_POST['status'] == "on") ? 1 : 0);
 
     $livro->setId($_POST['id']);
     $livro->save();
@@ -28,7 +28,7 @@ if(isset($_POST['botao'])){
         <?php
             echo "Título: <input name='titulo' value='{$livro->getTitulo()}' type='text' required> <br>";
             echo "Autoras: <input name='autoras' value='{$livro->getAutoras()}' type='text' required><br>";
-            echo "Status: <input name='status' type='checkbox' ".($livro->getStatus() ? 'checked' : '' )." ><br>";
+            echo "Status: <input name='status' type='checkbox' ".($livro->getStatus() ? 'checked' : '0' )." ><br>";
             echo "<input name='id' value='{$livro->getId()}' type='hidden'>";
 
 

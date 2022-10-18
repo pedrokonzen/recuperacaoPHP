@@ -4,7 +4,7 @@ if (isset($_POST['botao'])) {
     $livro = new Livro
     ($_POST['titulo'], 
     $_POST['autoras'], 
-    ($_POST['status'] == "on") ? 0 : 1);
+    ($_POST['status'] == "on") ? 1 : 0);
     $livro->save();
     header("location: index.php");
 }
