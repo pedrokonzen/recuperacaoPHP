@@ -1,0 +1,14 @@
+{
+    "name": "emily/aluno",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pkr"
+        }
+    ],
+    "require": {}
+}
