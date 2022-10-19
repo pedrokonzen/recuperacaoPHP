@@ -14,7 +14,7 @@ $alunos = Aluno::findallPMateriaBiologia();
 </head>
 
 <body>
-
+    <h1>PEDRO</h1>
     <table class="table table-striped">
         <thead>
             <tr>
