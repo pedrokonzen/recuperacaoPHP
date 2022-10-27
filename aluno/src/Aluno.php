@@ -194,4 +194,22 @@ class Aluno implements ActiveRecord
         }
         return $alunos;
     }
+
+    public static function findallHumanas(): array{
+        $conexao = new MySQL();
+        $sql = "SELECT * FROM alunos WHERE materia = 'Filosofia' OR 'Biologia'";
+        $resultados = $conexao->consulta($sql);
+        $alunos = array();
+        foreach ($resultados as $resultado) {
+            $a = new Aluno(
+                $resultado['nome'],
+                $resultado['materia'],
+                $resultado['nota'],
+                $resultado['frequencia']
+            );
+            $a->setId($resultado['id']);
+            $alunos[] = $a;
+        }
+        return $alunos;
+    }
 }
