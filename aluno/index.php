@@ -48,6 +48,8 @@ $alunos = Aluno::findall();
     <a href='filosofia.php'>Alunos de Filosofia</a><br>
     <a href='biologia.php'>Alunos de Biologia</a><br>
     <a href='humanas.php'>Alunos de Humanas</a><br>
+    <a href='exatas.php'>Alunos de Exatas</a><br>
+
 
 
 
