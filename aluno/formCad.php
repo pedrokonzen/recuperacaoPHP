@@ -27,7 +27,7 @@ if (isset($_POST['botao'])) {
         <label for="materia">Informe a Matéria: </label>
         <select name="materia">
             <option selected disabled="disabled">Selecione a Matéria</option>
-            <option>Matemática</option>
+            <option>TESTE COMMIT</option>
             <option>Português</option>
             <option>Filosofia</option>
             <option>Biologia</option>
